@@ -1,0 +1,77 @@
+.leftNav {
+	height: 100%;
+	width: 50px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #333333;
+	transition: 0.5s ease;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.bottomBar {
+	height: 20px;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+    bottom: 0;
+	left: 0;
+	background-color: #3078c9;
+	transition: 0.5s ease;
+	overflow-x: hidden;
+	padding-bottom: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.explorerBar {
+	height: 100%;
+	width: 270px;
+	position: fixed;
+	z-index: 0;
+	top: 0;
+	left: 50px ;
+	background-color: #252526;
+	transition: 0.5s ease;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.codeWindow {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 0;
+	top: 0;
+	left: 320px;
+	background-color: #222222;
+	transition: 0.5s ease;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.tabBar {
+	height: 40px;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+    top: 0;
+	left: 320px;
+	background-color: #252526;
+	transition: 0.5s ease;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
