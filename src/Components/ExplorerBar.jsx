@@ -1,4 +1,4 @@
-import "./styling.css";
+import "../stylesheets/explorerBar.css";
 
 const ExplorerBar = () => {
 	return (

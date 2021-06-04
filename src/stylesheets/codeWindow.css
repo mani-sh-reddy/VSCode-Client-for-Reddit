@@ -1,0 +1,25 @@
+.codeWindow {
+	height: calc(100% - 65px);
+	width: calc(100% - (50px + 270px));
+	position: fixed;
+	top: 40px;
+	left: 320px;
+	background-color: #222222;
+	transition: 0.5s ease;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.tabBar {
+	height: 40px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 320px;
+	background-color: #252526;
+	transition: 0.5s ease;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}

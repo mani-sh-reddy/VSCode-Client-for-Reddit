@@ -1,4 +1,4 @@
-import './styling.css';
+import "../stylesheets/bottomBar.css";
 
 const RemoteWindowButton = () => {
     

@@ -1,0 +1,21 @@
+.leftNav {
+	height: calc(100% - 25px);
+	width: 50px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #333333;
+	transition: 0.5s ease;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.leftNavIcon {
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+
+.flexSeperator {
+	flex: 1 1;
+}

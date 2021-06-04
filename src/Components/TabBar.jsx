@@ -1,4 +1,4 @@
-import './styling.css';
+import "../stylesheets/codeWindow.css";
 
 const TabBar = () => {
     

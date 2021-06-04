@@ -1,4 +1,4 @@
-import "./styling.css";
+import "../stylesheets/leftNav.css";
 import NavFilesIcon from "../images/vscode-default-icons/files.svg";
 import NavSearchIcon from "../images/vscode-default-icons/search.svg";
 import NavSourceControlIcon from "../images/vscode-default-icons/source-control.svg";
