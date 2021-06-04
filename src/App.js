@@ -1,17 +1,20 @@
 import "./App.css";
-import { Container, Row, Col } from "reactstrap";
 import LeftNav from "./Components/LeftNav";
-import BottomBar from "./Components/BottomBar";
 import ExplorerBar from "./Components/ExplorerBar";
+import TabBar from "./Components/TabBar";
 import CodeWindow from "./Components/CodeWindow";
+import RemoteWindowButton from "./Components/RemoteWindowButton";
+import BottomBar from "./Components/BottomBar";
 
 function App() {
 	return (
 		<>
 			<LeftNav />
-			<BottomBar />
 			<ExplorerBar />
+			<TabBar />
 			<CodeWindow />
+			<RemoteWindowButton />
+			<BottomBar />
 		</>
 	);
 }

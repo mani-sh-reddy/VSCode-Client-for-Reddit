@@ -4,8 +4,10 @@ const LeftNav = () => {
     
     return (
     <div className="leftNav">
-    <p>0</p>
-    <p>O</p>
+    <p>A</p>
+    <p>B</p>
+    <p>C</p>
+    <p>D</p>
     </div>
  );
  };

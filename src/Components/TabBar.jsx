@@ -4,11 +4,9 @@ const TabBar = () => {
     
     return (
     <div className="tabBar">
-    <p>0</p>
-    <p>O</p>
-    <p>O</p>
-    <p>O</p>
-    <p>O</p>
+    <p>Tab1</p>
+    <p>Tab2</p>
+    <p>Tab3</p>
     </div>
  );
  };

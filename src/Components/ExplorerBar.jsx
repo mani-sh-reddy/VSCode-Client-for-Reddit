@@ -3,8 +3,16 @@ import "./styling.css";
 const ExplorerBar = () => {
 	return (
 		<div className="explorerBar">
-			<p>03242342343</p>
-			<p>O</p>
+			<p>placeholder</p>
+			<p>placeholder</p>
+			<p>placeholder</p>
+			<p>placeholder</p>
+			<p>placeholder</p>
+			<p>placeholder</p>
+			<p>placeholder</p>
+			<p>placeholder</p>
+			<p>placeholder</p>
+
 		</div>
 	);
 };

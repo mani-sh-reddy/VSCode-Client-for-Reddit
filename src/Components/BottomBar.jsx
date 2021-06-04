@@ -1,6 +1,6 @@
 import './styling.css';
 
-const LeftNav = () => {
+const BottomBar = () => {
     
     return (
     <div className="bottomBar">
@@ -13,4 +13,4 @@ const LeftNav = () => {
  );
  };
  
- export default LeftNav;
+ export default BottomBar;

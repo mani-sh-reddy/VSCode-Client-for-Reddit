@@ -1,13 +1,11 @@
 .leftNav {
-	height: 100%;
+	height: calc(100% - 25px);
 	width: 50px;
 	position: fixed;
-	z-index: 1;
 	top: 0;
 	left: 0;
 	background-color: #333333;
 	transition: 0.5s ease;
-	overflow-x: hidden;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -15,47 +13,55 @@
 
 .bottomBar {
 	height: 20px;
-	width: 100%;
+	width: calc(100% - 40px);
 	position: fixed;
-	z-index: 1;
     bottom: 0;
-	left: 0;
+	left: 40px;
 	background-color: #3078c9;
 	transition: 0.5s ease;
-	overflow-x: hidden;
 	padding-bottom: 5px;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	align-items: center;
+}
+
+.remoteWindowButton {
+	height: 20px;
+	width: 40px;
+	position: fixed;
+    bottom: 0;
+	left: 0;
+	background-color: #16825D;
+	transition: 0.5s ease;
+	padding-bottom: 5px;
+	display: flex;
+	flex-direction: row;
 	align-items: center;
 }
 
 .explorerBar {
-	height: 100%;
+	height: calc(100% - 25px);
 	width: 270px;
 	position: fixed;
-	z-index: 0;
 	top: 0;
 	left: 50px ;
 	background-color: #252526;
 	transition: 0.5s ease;
-	overflow-x: hidden;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
 .codeWindow {
-	height: 100%;
-	width: 100%;
+	height: calc(100% - 65px);
+	width: calc(100% - (50px + 270px));
 	position: fixed;
-	z-index: 0;
-	top: 0;
+	top: 40px;
 	left: 320px;
 	background-color: #222222;
 	transition: 0.5s ease;
-	overflow-x: hidden;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
 }
 
@@ -63,14 +69,12 @@
 	height: 40px;
 	width: 100%;
 	position: fixed;
-	z-index: 1;
     top: 0;
 	left: 320px;
 	background-color: #252526;
 	transition: 0.5s ease;
-	overflow-x: hidden;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
 }
 
