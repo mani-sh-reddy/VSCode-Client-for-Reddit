@@ -1,74 +1,70 @@
 import "../stylesheets/leftNav.css";
-// import Files from "../images/vscode-default-icons/files.svg";
-// import Search from "../images/vscode-default-icons/search.svg";
-// import SourceControl from "../images/vscode-default-icons/source-control.svg";
-// import Debug from "../images/vscode-default-icons/debug-alt.svg";
-// import RemoteExplorer from "../images/vscode-default-icons/remote-explorer.svg";
-// import Extensions from "../images/vscode-default-icons/extensions.svg";
-// import Account from "../images/vscode-default-icons/account.svg";
-// import Settings from "../images/vscode-default-icons/settings-gear.svg";
+import Files from "../images/vscode-default-icons/files.svg";
+import Search from "../images/vscode-default-icons/search.svg";
+import SourceControl from "../images/vscode-default-icons/source-control.svg";
+import Debug from "../images/vscode-default-icons/debug-alt.svg";
+import RemoteExplorer from "../images/vscode-default-icons/remote-explorer.svg";
+import Extensions from "../images/vscode-default-icons/extensions.svg";
+import Account from "../images/vscode-default-icons/account.svg";
+import Settings from "../images/vscode-default-icons/settings-gear.svg";
 
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
 const LeftNav = () => {
-	const navPages = [
-		"Files",
-		"Search",
-		"SourceControl",
-		"Debug",
-		"RemoteExplorer",
-		"Extensions",
-		"Account",
-		"Settings",
-	];
+	// const navPages = [
+	// 	"Files",
+	// 	"Search",
+	// 	"SourceControl",
+	// 	"Debug",
+	// 	"RemoteExplorer",
+	// 	"Extensions",
+	// 	"Account",
+	// 	"Settings",
+	// ];
 
-	const [active, setActive] = useState(navPages[0]);
+	// const [active, setActive] = useState(navPages[0]);
 
 	return (
 		<div className="leftNav">
-			{navPages.map((page) => (
+			{/* {navPages.map((page) => (
 				<button className="leftNavButton" onClick={console.log(`${page}`)}>
 					<img className="leftNavIcon" src={require(`../images/vscode-default-icons/${page}.svg`)} alt={page} />
 				</button>
-			))}
+			))} */}
 
-			{/* <button className="leftNavButton" onClick={console.log("Files")}>
-				<img className="leftNavIcon" src={Files} alt="Files" />
-			</button> */}
-
-			{/* <button className="leftNavButton" onClick={console.log("NavFiles")}>
-				<img className="leftNavIcon" src={NavFilesIcon} alt="NavFilesIcon" />
+			<button className="leftNavButton" onClick={console.log("Clicked Files Icon!")}>
+				<img className="leftNavIcon" src={Files} alt="Files Icon" />
 			</button>
 
-			<button className="leftNavButton" onClick={console.log("NavSearch")}>
-				<img className="leftNavIcon" src={NavSearchIcon} alt="NavSearchIcon" />
+			<button className="leftNavButton" onClick={console.log("Clicked Search Icon!")}>
+				<img className="leftNavIcon" src={Search} alt="SearchIcon" />
 			</button>
 
-			<button className="leftNavButton" onClick={console.log("NavSourceControl")}>
-				<img className="leftNavIcon" src={NavSourceControlIcon} alt="NavSourceControlIcon" />
+			<button className="leftNavButton" onClick={console.log("Clicked Source Icon!Control")}>
+				<img className="leftNavIcon" src={SourceControl} alt="SourceControl Icon" />
 			</button>
 
-			<button className="leftNavButton" onClick={console.log("NavDebugAlt")}>
-				<img className="leftNavIcon" src={NavDebugAltIcon} alt="NavDebugAltIcon" />
+			<button className="leftNavButton" onClick={console.log("Clicked DebugA Icon!lt")}>
+				<img className="leftNavIcon" src={Debug} alt="DebugAlt Icon" />
 			</button>
 
-			<button className="leftNavButton" onClick={console.log("NavRemoteExplorer")}>
-				<img className="leftNavIcon" src={NavRemoteExplorerIcon} alt="NavRemoteExplorerIcon" />
+			<button className="leftNavButton" onClick={console.log("Clicked Remote Icon!Explorer")}>
+				<img className="leftNavIcon" src={RemoteExplorer} alt="RemoteExplorer Icon" />
 			</button>
 
-			<button className="leftNavButton" onClick={console.log("NavExtensions")}>
-				<img className="leftNavIcon" src={NavExtensionsIcon} alt="NavExtensionsIcon" />
+			<button className="leftNavButton" onClick={console.log("Clicked Extens Icon!ions")}>
+				<img className="leftNavIcon" src={Extensions} alt="Extensions Icon" />
 			</button>
 
 			<div className="flexSeperator" />
 
-			<button className="leftNavButton" onClick={console.log("NavAccount")}>
-				<img className="leftNavIcon" src={NavAccountIcon} alt="NavAccountIcon" />
+			<button className="leftNavButton" onClick={console.log("Clicked Accoun Icon!t")}>
+				<img className="leftNavIcon" src={Account} alt="Account Icon" />
 			</button>
 
-			<button className="leftNavButton" onClick={console.log("NavSettings")}>
-				<img className="leftNavIcon" src={NavSettingsIcon} alt="NavSettingsIcon" />
-			</button> */}
+			<button className="leftNavButton" onClick={console.log("Clicked Settin Icon!gs")}>
+				<img className="leftNavIcon" src={Settings} alt="Settings Icon" />
+			</button>
 		</div>
 	);
 };

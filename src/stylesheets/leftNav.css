@@ -29,8 +29,3 @@
     all: unset;
     filter: brightness(200%);
 }
-
-/* for svg icons
-path {
-    fill: #C5C5C5;
-} */
