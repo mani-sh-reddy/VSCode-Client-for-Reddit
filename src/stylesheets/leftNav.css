@@ -12,10 +12,25 @@
 }
 
 .leftNavIcon {
-	padding-top: 14px;
-	padding-bottom: 14px;
+	padding: 14px 10px;
 }
 
 .flexSeperator {
 	flex: 1 1;
 }
+
+.leftNavButton {
+    all: unset;
+    transition: 0.1s ease;
+    filter: brightness(65%);
+}
+
+.leftNavButton:hover {
+    all: unset;
+    filter: brightness(200%);
+}
+
+/* for svg icons
+path {
+    fill: #C5C5C5;
+} */
