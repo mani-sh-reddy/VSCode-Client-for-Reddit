@@ -1,6 +1,7 @@
 import "../stylesheets/leftNav.css";
+import LeftNavButton from "./LeftNavButton";
 
-// import React, { useState } from "react";
+import React, { useState } from "react";
 
 const LeftNav = () => {
 	const navPages = [
@@ -14,18 +15,12 @@ const LeftNav = () => {
 		"Settings",
 	];
 
-	// const [active, setActive] = useState(navPages[0]);
+	const [active, setActive] = useState(navPages[0]);
 
 	return (
 		<div className="leftNav">
 			{navPages.map((page) => (
-				<button className="leftNavButton" onClick={console.log(`${page}`)}>
-					<img
-						className="leftNavIcon"
-						src={require(`../images/vscode-default-icons/${page}.svg`).default}
-						alt={page}
-					/>
-				</button>
+				<LeftNavButton page={page} key={page} />
 			))}
 		</div>
 	);
