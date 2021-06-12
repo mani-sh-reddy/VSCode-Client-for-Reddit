@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/VSCodized-Reddit/static/css/main.c214c10b.chunk.css",
-    "main.js": "/VSCodized-Reddit/static/js/main.5aa1f494.chunk.js",
-    "main.js.map": "/VSCodized-Reddit/static/js/main.5aa1f494.chunk.js.map",
-    "runtime-main.js": "/VSCodized-Reddit/static/js/runtime-main.e99ee5e6.js",
-    "runtime-main.js.map": "/VSCodized-Reddit/static/js/runtime-main.e99ee5e6.js.map",
-    "static/js/2.b89a47ed.chunk.js": "/VSCodized-Reddit/static/js/2.b89a47ed.chunk.js",
-    "static/js/2.b89a47ed.chunk.js.map": "/VSCodized-Reddit/static/js/2.b89a47ed.chunk.js.map",
-    "static/js/3.187f3de9.chunk.js": "/VSCodized-Reddit/static/js/3.187f3de9.chunk.js",
-    "static/js/3.187f3de9.chunk.js.map": "/VSCodized-Reddit/static/js/3.187f3de9.chunk.js.map",
+    "main.css": "/VSCodized-Reddit/static/css/main.9462983d.chunk.css",
+    "main.js": "/VSCodized-Reddit/static/js/main.5631d38a.chunk.js",
+    "main.js.map": "/VSCodized-Reddit/static/js/main.5631d38a.chunk.js.map",
+    "runtime-main.js": "/VSCodized-Reddit/static/js/runtime-main.4cb2cc45.js",
+    "runtime-main.js.map": "/VSCodized-Reddit/static/js/runtime-main.4cb2cc45.js.map",
+    "static/js/2.f09abf51.chunk.js": "/VSCodized-Reddit/static/js/2.f09abf51.chunk.js",
+    "static/js/2.f09abf51.chunk.js.map": "/VSCodized-Reddit/static/js/2.f09abf51.chunk.js.map",
+    "static/js/3.b5abac1e.chunk.js": "/VSCodized-Reddit/static/js/3.b5abac1e.chunk.js",
+    "static/js/3.b5abac1e.chunk.js.map": "/VSCodized-Reddit/static/js/3.b5abac1e.chunk.js.map",
     "index.html": "/VSCodized-Reddit/index.html",
-    "static/css/main.c214c10b.chunk.css.map": "/VSCodized-Reddit/static/css/main.c214c10b.chunk.css.map",
-    "static/js/2.b89a47ed.chunk.js.LICENSE.txt": "/VSCodized-Reddit/static/js/2.b89a47ed.chunk.js.LICENSE.txt",
+    "static/css/main.9462983d.chunk.css.map": "/VSCodized-Reddit/static/css/main.9462983d.chunk.css.map",
+    "static/js/2.f09abf51.chunk.js.LICENSE.txt": "/VSCodized-Reddit/static/js/2.f09abf51.chunk.js.LICENSE.txt",
     "static/media/Account.svg": "/VSCodized-Reddit/static/media/Account.853ac8ca.svg",
     "static/media/Debug.svg": "/VSCodized-Reddit/static/media/Debug.a10b25ea.svg",
     "static/media/Extensions.svg": "/VSCodized-Reddit/static/media/Extensions.c8ad054f.svg",
@@ -358,9 +358,9 @@
     "static/media/zoom-out.svg": "/VSCodized-Reddit/static/media/zoom-out.5fdc030e.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e99ee5e6.js",
-    "static/js/2.b89a47ed.chunk.js",
-    "static/css/main.c214c10b.chunk.css",
-    "static/js/main.5aa1f494.chunk.js"
+    "static/js/runtime-main.4cb2cc45.js",
+    "static/js/2.f09abf51.chunk.js",
+    "static/css/main.9462983d.chunk.css",
+    "static/js/main.5631d38a.chunk.js"
   ]
 }
