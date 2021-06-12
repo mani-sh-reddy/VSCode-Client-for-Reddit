@@ -1,5 +1,8 @@
 import "../stylesheets/leftNav.css";
 
+// eslint-disable-next-line
+import Files from "../images/Files.svg"
+
 // import React, { useState } from "react";
 
 
@@ -18,9 +21,10 @@ const LeftNavButton = (props) => {
 					console.log(`clicked ${props.page}`);
 				}}
 			>
+				
 				<img
 					className="leftNavIcon"
-					src={require(`static/js/images/${props.page}.svg`).default}
+					src={props.page}
 					// src={require(`../images/${props.page}.svg`).default}
 					alt={props.page}
 				/>
