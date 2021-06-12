@@ -2,29 +2,30 @@ import "../stylesheets/leftNav.css";
 
 // import React, { useState } from "react";
 
-
 const LeftNavButton = (props) => {
-	// const [active, setActive] = useState(navPages[0]);
+	const active = props.page;
 
 	const flexSeperator = <div className="flexSeperator" />;
 
 	return (
 		<>
 			{props.page === "Account" ? flexSeperator : null}
-
-			<button
-				className="leftNavButton"
-				onClick={() => {
-					console.log(`clicked ${props.page}`);
-				}}
-			>
-				
-				<img
-					className="leftNavIcon"
-					src={require(`../images/${props.page}.svg`).default}
-					alt={props.page}
-				/>
-			</button>
+			<div style={{ position: "relative" }}>
+				<button
+					className="leftNavButton"
+					style={{ filter: `brightness(${props.isActive ? 120 : 65}%)` }}
+					onClick={() => {
+						props.navButtonClicked(active);
+					}}
+				>
+					<img
+						className="leftNavIcon"
+						src={require(`../images/${props.page}.svg`).default}
+						alt={props.page}
+					/>
+				</button>
+				{props.isActive ? <div className="activeRectangle"></div> : <div className="inactiveRectangle"></div>}
+			</div>
 		</>
 	);
 };
