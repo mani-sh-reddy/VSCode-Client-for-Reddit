@@ -1,8 +1,5 @@
 import "../stylesheets/leftNav.css";
 
-// eslint-disable-next-line
-// import Files from "../images/Files.svg"
-
 // import React, { useState } from "react";
 
 
