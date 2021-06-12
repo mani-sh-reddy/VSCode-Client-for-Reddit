@@ -2,6 +2,7 @@ import "../stylesheets/leftNav.css";
 
 // import React, { useState } from "react";
 
+
 const LeftNavButton = (props) => {
 	// const [active, setActive] = useState(navPages[0]);
 
@@ -19,7 +20,8 @@ const LeftNavButton = (props) => {
 			>
 				<img
 					className="leftNavIcon"
-					src={require(`../images/vscode-default-icons/${props.page}.svg`).default}
+					src={require(`static/js/images/${props.page}.svg`).default}
+					// src={require(`../images/${props.page}.svg`).default}
 					alt={props.page}
 				/>
 			</button>
