@@ -1,16 +1,21 @@
 import "../stylesheets/codeWindow.css";
 import Axios from "axios";
 import React, { useState, useEffect } from "react";
-import Moment from "react-moment";
+import CodeWindowContentPosts from "./CodeWindowContentPosts";
+import CodeWindowContentHeader from "./CodeWindowContentHeader";
 
 const CodeWindow = () => {
 	const [posts, setPosts] = useState([]);
 	const [error, setError] = useState("");
 
 	const postsLimiter = 20;
+	const subredditName = "popular";
+	const subredditSort = "hot";
+	// eslint-disable-next-line
+	const subredditSortTimeRange = "past 24 hours";
 
 	const getPopularPosts = () => {
-		Axios.get(`https://www.reddit.com/r/popular/hot.json?limit=${postsLimiter}`)
+		Axios.get(`https://www.reddit.com/r/${subredditName}/${subredditSort}.json?limit=${postsLimiter}`)
 			.then((response) => {
 				const allPosts = response.data.data.children;
 				setPosts(allPosts);
@@ -29,33 +34,35 @@ const CodeWindow = () => {
 		getPopularPosts();
 	}, []);
 
-	const unixTimeConv = (unixTime) => {
-		return (
-			<Moment unix format="h:mm a, Do MMMM YYYY">
-				{unixTime}
-			</Moment>
-		);
-	};
-
 	return (
 		<>
 			<div className="codeWindow">
 				<div className="codeWindowContent">
+					<CodeWindowContentHeader
+						subredditName={subredditName}
+						subredditSort={subredditSort}
+						subredditSortTimeRange={subredditSortTimeRange}
+					/>
+
+					{error === "" ? null : <p>{error}</p>}
+
 					{posts.map((posts) => {
 						return (
-							<div key={posts.data.id}>
-								<p>{`${posts.data.subreddit}`}</p>
-								<p>{`by ${posts.data.author}`}</p>
-								<p>created at {unixTimeConv(posts.data.created)}</p>
-								<p>{`${posts.data.title}`}</p>
-								<p>{`comments: ${posts.data.num_comments}`}</p>
-								<p>{`score: ${posts.data.score}`}</p>
-								<br />
-							</div>
+							<CodeWindowContentPosts
+								key={posts.data.id}
+								postID={posts.data.id}
+								subreddit={posts.data.subreddit}
+								subreddit_subscribers={posts.data.subreddit_subscribers}
+								author={posts.data.author}
+								created={posts.data.created}
+								title={posts.data.title}
+								num_comments={posts.data.num_comments}
+								score={posts.data.score}
+							/>
 						);
 					})}
 
-					{error === "" ? null : <p>{error}</p>}
+					<p className="codeOperator">{"}"}</p>
 				</div>
 			</div>
 		</>

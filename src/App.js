@@ -10,13 +10,17 @@ import BottomBar from "./Components/BottomBar";
 function App() {
 	return (
 		<>
-			<LeftNav />
-			<ExplorerBar />
-			<TabBar />
-			<BreadCrumbBar />
+			<div className="noselect">
+				<LeftNav />
+				<ExplorerBar />
+				<TabBar />
+				<BreadCrumbBar />
+			</div>
 			<CodeWindow />
-			<RemoteWindowButton />
-			<BottomBar />
+			<div className="noselect">
+				<RemoteWindowButton />
+				<BottomBar />
+			</div>
 		</>
 	);
 }
