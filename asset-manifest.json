@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/VSCode-Client-for-Reddit/static/css/main.96e2e4ef.chunk.css",
-    "main.js": "/VSCode-Client-for-Reddit/static/js/main.8733226e.chunk.js",
-    "main.js.map": "/VSCode-Client-for-Reddit/static/js/main.8733226e.chunk.js.map",
+    "main.css": "/VSCode-Client-for-Reddit/static/css/main.12d9e966.chunk.css",
+    "main.js": "/VSCode-Client-for-Reddit/static/js/main.5966092b.chunk.js",
+    "main.js.map": "/VSCode-Client-for-Reddit/static/js/main.5966092b.chunk.js.map",
     "runtime-main.js": "/VSCode-Client-for-Reddit/static/js/runtime-main.84adac7c.js",
     "runtime-main.js.map": "/VSCode-Client-for-Reddit/static/js/runtime-main.84adac7c.js.map",
-    "static/js/2.26cb6e29.chunk.js": "/VSCode-Client-for-Reddit/static/js/2.26cb6e29.chunk.js",
-    "static/js/2.26cb6e29.chunk.js.map": "/VSCode-Client-for-Reddit/static/js/2.26cb6e29.chunk.js.map",
+    "static/js/2.eac2177d.chunk.js": "/VSCode-Client-for-Reddit/static/js/2.eac2177d.chunk.js",
+    "static/js/2.eac2177d.chunk.js.map": "/VSCode-Client-for-Reddit/static/js/2.eac2177d.chunk.js.map",
     "static/js/3.343e6477.chunk.js": "/VSCode-Client-for-Reddit/static/js/3.343e6477.chunk.js",
     "static/js/3.343e6477.chunk.js.map": "/VSCode-Client-for-Reddit/static/js/3.343e6477.chunk.js.map",
     "index.html": "/VSCode-Client-for-Reddit/index.html",
-    "static/css/main.96e2e4ef.chunk.css.map": "/VSCode-Client-for-Reddit/static/css/main.96e2e4ef.chunk.css.map",
-    "static/js/2.26cb6e29.chunk.js.LICENSE.txt": "/VSCode-Client-for-Reddit/static/js/2.26cb6e29.chunk.js.LICENSE.txt",
+    "static/css/main.12d9e966.chunk.css.map": "/VSCode-Client-for-Reddit/static/css/main.12d9e966.chunk.css.map",
+    "static/js/2.eac2177d.chunk.js.LICENSE.txt": "/VSCode-Client-for-Reddit/static/js/2.eac2177d.chunk.js.LICENSE.txt",
     "static/media/Account.svg": "/VSCode-Client-for-Reddit/static/media/Account.853ac8ca.svg",
     "static/media/Debug.svg": "/VSCode-Client-for-Reddit/static/media/Debug.a10b25ea.svg",
     "static/media/Extensions.svg": "/VSCode-Client-for-Reddit/static/media/Extensions.c8ad054f.svg",
@@ -359,8 +359,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.84adac7c.js",
-    "static/js/2.26cb6e29.chunk.js",
-    "static/css/main.96e2e4ef.chunk.css",
-    "static/js/main.8733226e.chunk.js"
+    "static/js/2.eac2177d.chunk.js",
+    "static/css/main.12d9e966.chunk.css",
+    "static/js/main.5966092b.chunk.js"
   ]
 }
