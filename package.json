@@ -2,7 +2,7 @@
 	"name": "reddit-vscode",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://mani-sh-reddy.github.io/VSCodized-Reddit",
+	"homepage": "https://mani-sh-reddy.github.io/VSCode-Client-for-Reddit",
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.12.0",
 		"@testing-library/react": "^11.2.7",
