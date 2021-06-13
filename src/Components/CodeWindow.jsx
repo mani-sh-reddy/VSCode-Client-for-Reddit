@@ -31,7 +31,7 @@ const CodeWindow = () => {
 			<div className="codeWindow">
 				<div className="codeWindowContent">
 					{posts.map((posts) => {
-						return <p>{posts.data.title}</p>;
+						return <p key={posts.data.id}>{posts.data.title}</p>;
 					})}
 
 					{error === "" ? null : <p>{error}</p>}
