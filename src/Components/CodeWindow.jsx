@@ -29,6 +29,14 @@ const CodeWindow = () => {
 		getPopularPosts();
 	}, []);
 
+	const unixTimeConv = (unixTime) => {
+		return (
+			<Moment unix format="h:mm a, Do MMMM YYYY">
+				{unixTime}
+			</Moment>
+		);
+	};
+
 	return (
 		<>
 			<div className="codeWindow">
@@ -38,14 +46,7 @@ const CodeWindow = () => {
 							<div key={posts.data.id}>
 								<p>{`${posts.data.subreddit}`}</p>
 								<p>{`by ${posts.data.author}`}</p>
-								<p>
-									posted at{" "}
-									{
-										<Moment unix format="h:mm a, Do MMMM YYYY">
-											{posts.data.created}
-										</Moment>
-									}
-								</p>
+								<p>created at {unixTimeConv(posts.data.created)}</p>
 								<p>{`${posts.data.title}`}</p>
 								<p>{`comments: ${posts.data.num_comments}`}</p>
 								<p>{`score: ${posts.data.score}`}</p>
