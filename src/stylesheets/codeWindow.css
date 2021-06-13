@@ -5,7 +5,7 @@
 	top: 65px;
 	left: 320px;
 	background-color: #222222;
-	color: beige;
+	color: white;
 	transition: 0.5s ease;
 	display: flex;
 	flex-direction: column;
@@ -22,6 +22,7 @@
 	text-rendering: optimizeLegibility;
 	font-weight: 400;
 	line-height: 50%;
+	padding: 20px;
 }
 
 .tabBar {
@@ -94,6 +95,7 @@
 
 .codeComment {
 	color: #757575;
+	line-height: 150%;
 }
 
 .codeReturn {

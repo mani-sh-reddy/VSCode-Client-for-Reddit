@@ -23,9 +23,9 @@ const CodeWindowContentPosts = (props) => {
 		<>
 		<p>
 			&emsp; &emsp;
-			<span className="codeFunction">{"postID"}</span>
+			<span className="codeFunction">id:{props.postID}</span>
 			<span className="codeOperator">{"("}</span>
-			<span className="codeInputs">{props.postID}</span>
+			<span className="codeInputs">{"<type of post>"}</span>
 			<span className="codeOperator">{") {"}</span>
 		</p>
 		<p>
