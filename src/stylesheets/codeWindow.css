@@ -1,7 +1,7 @@
 .codeWindow {
 	height: calc(100% - 65px);
 	width: calc(100% - (50px + 270px));
-	position: relative;
+	position: absolute;
 	top: 65px;
 	left: 320px;
 	background-color: #222222;
@@ -10,6 +10,11 @@
 	display: flex;
 	flex-direction: column;
 	align-items: left;
+}
+
+.codeWindowContent {
+	overflow:scroll; 
+	height:100%;
 }
 
 .tabBar {
