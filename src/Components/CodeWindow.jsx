@@ -1,25 +1,30 @@
 import "../stylesheets/codeWindow.css";
 import Axios from "axios";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const CodeWindow = () => {
 	const [posts, setPosts] = useState([]);
+	const [error, setError] = useState("");
 
 	const getPopularPosts = () => {
 		Axios.get("https://www.reddit.com/r/popular/hot.json")
 			.then((response) => {
 				const allPosts = response.data.data.children;
 				setPosts(allPosts);
-				allPosts.forEach((object) => {
-					console.log(object.data.title);
-				});
-
+				// allPosts.forEach((object) => {
+				// 	console.log(object.data.title);
+				// });
 				// console.log(response.data.data.children);
 			})
 			.catch((error) => {
-				console.log(error);
+				setError(error.message);
+				console.error(error);
 			});
 	};
+
+	useEffect(() => {
+		getPopularPosts();
+	}, []);
 
 	return (
 		<>
@@ -29,7 +34,7 @@ const CodeWindow = () => {
 						return <p>{posts.data.title}</p>;
 					})}
 
-					<button onClick={getPopularPosts}>log the json</button>
+					{error === "" ? null : <p>{error}</p>}
 				</div>
 			</div>
 		</>

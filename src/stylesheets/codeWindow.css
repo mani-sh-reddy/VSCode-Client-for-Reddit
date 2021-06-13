@@ -14,7 +14,7 @@
 
 .codeWindowContent {
 	overflow:scroll; 
-	height:100%;
+	height: calc(100% - 20px);
 }
 
 .tabBar {
