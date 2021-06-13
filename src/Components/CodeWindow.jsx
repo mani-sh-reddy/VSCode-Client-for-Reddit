@@ -1,20 +1,23 @@
 import "../stylesheets/codeWindow.css";
 import Axios from "axios";
 import React, { useState, useEffect } from "react";
+import Moment from "react-moment";
 
 const CodeWindow = () => {
 	const [posts, setPosts] = useState([]);
 	const [error, setError] = useState("");
 
+	const postsLimiter = 20;
+
 	const getPopularPosts = () => {
-		Axios.get("https://www.reddit.com/r/popular/hot.json")
+		Axios.get(`https://www.reddit.com/r/popular/hot.json?limit=${postsLimiter}`)
 			.then((response) => {
 				const allPosts = response.data.data.children;
 				setPosts(allPosts);
 				// allPosts.forEach((object) => {
 				// 	console.log(object.data.title);
 				// });
-				// console.log(response.data.data.children);
+				console.log(response.data.data.children);
 			})
 			.catch((error) => {
 				setError(error.message);
@@ -31,7 +34,24 @@ const CodeWindow = () => {
 			<div className="codeWindow">
 				<div className="codeWindowContent">
 					{posts.map((posts) => {
-						return <p key={posts.data.id}>{posts.data.title}</p>;
+						return (
+							<div key={posts.data.id}>
+								<p>{`${posts.data.subreddit}`}</p>
+								<p>{`by ${posts.data.author}`}</p>
+								<p>
+									posted at{" "}
+									{
+										<Moment unix format="h:mm a, Do MMMM YYYY">
+											{posts.data.created}
+										</Moment>
+									}
+								</p>
+								<p>{`${posts.data.title}`}</p>
+								<p>{`comments: ${posts.data.num_comments}`}</p>
+								<p>{`score: ${posts.data.score}`}</p>
+								<br />
+							</div>
+						);
 					})}
 
 					{error === "" ? null : <p>{error}</p>}
