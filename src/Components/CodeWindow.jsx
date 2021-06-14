@@ -3,26 +3,19 @@ import Axios from "axios";
 import React, { useState, useEffect } from "react";
 import CodeWindowContentPosts from "./CodeWindowContentPosts";
 import CodeWindowContentHeader from "./CodeWindowContentHeader";
+import LoadingIndicator from "./LoadingIndicator";
 
 const CodeWindow = () => {
 	const [posts, setPosts] = useState([]);
 	const [error, setError] = useState("");
+
+	const [loaded, setLoaded] = useState(false);
 
 	const postsLimiter = 20;
 	const subredditName = "popular";
 	const subredditSort = "hot";
 	// eslint-disable-next-line
 	const subredditSortTimeRange = "past 24 hours";
-
-	// let loadingLabel = "Loading...";
-	// const [loaded, setLoaded] = useState(false);
-	// const loadingIndicator = () => {
-	// 	return (
-	// 		<Spinner animation="border" role="status">
-	// 			<span className="visually-hidden">{loadingLabel}</span>
-	// 		</Spinner>
-	// 	);
-	// };
 
 	const getPopularPosts = () => {
 		Axios.get(`https://www.reddit.com/r/${subredditName}/${subredditSort}.json?limit=${postsLimiter}`)
@@ -33,6 +26,7 @@ const CodeWindow = () => {
 				// 	console.log(object.data.title);
 				// });
 				// console.log(response.data.data.children);
+				setLoaded(true);
 			})
 			.catch((error) => {
 				setError(error.message);
@@ -73,6 +67,8 @@ const CodeWindow = () => {
 							/>
 						);
 					})}
+
+					{loaded === false ? <LoadingIndicator/> : null}
 
 					<p className="codeOperator">{"}"}</p>
 				</div>
