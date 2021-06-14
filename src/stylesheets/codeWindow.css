@@ -113,3 +113,15 @@
 	color: #afaf87;
 	border-radius: 3px;
 }
+
+.tab1 {
+	padding-left: 2em;
+}
+
+.indentGuide {
+	border-left: 1px solid;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	margin: -5px 0;
+	border-color: #353535;
+}
