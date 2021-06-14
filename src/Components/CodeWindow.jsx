@@ -68,7 +68,7 @@ const CodeWindow = () => {
 						);
 					})}
 
-					{loaded === false ? <LoadingIndicator/> : null}
+					{loaded === false ? <LoadingIndicator /> : null}
 
 					<p className="codeOperator">{"}"}</p>
 				</div>
