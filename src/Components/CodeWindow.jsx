@@ -41,7 +41,7 @@ const CodeWindow = () => {
 	return (
 		<>
 			<div className="codeWindow">
-				<div className="codeWindowContent ">
+				<div className="codeWindowContent" contenteditable="true">
 					<CodeWindowContentHeader
 						subredditName={subredditName}
 						subredditSort={subredditSort}

@@ -87,8 +87,8 @@ const CodeWindowContentPosts = (props) => {
 					<p>
 						<span className="codeReturn">{"return"}</span>
 						<span className="codeOperator">{" ("}</span>
-						<a href={`https://www.reddit.com/${props.permalink}`} rel="noreferrer" target="_blank" className="toRedditButton">
-							<span className="codeFunctionButton">{"open"}</span>
+						<a contenteditable="false" href={`https://www.reddit.com/${props.permalink}`} rel="noreferrer" target="_blank" className="toRedditButton">
+							<span contenteditable="false" className="codeFunctionButton">{"open"}</span>
 						</a>
 						<span className="codeOperator">{", "}</span>
 						<span className="codeMethodCall">{"upvote"}</span>
@@ -100,7 +100,7 @@ const CodeWindowContentPosts = (props) => {
 						<span className="codeMethodCall">{"share"}</span>
 						<span className="codeOperator">{", "}</span>
 						<span className="codeMethodCall">{"save"}</span>
-						<span className="codeOperator">{")"}</span>
+						<span className="codeOperator">{");"}</span>
 					</p>
 				</div>
 				<p>

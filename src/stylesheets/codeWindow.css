@@ -130,3 +130,14 @@
 	border-color: #353535;
 }
 
+[contenteditable]:focus {
+	outline: 0px solid transparent;
+	caret-color: white;
+}
+
+::selection {
+	background: #3a3d41; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+	background: #3a3d41; /* Gecko Browsers */
+}
