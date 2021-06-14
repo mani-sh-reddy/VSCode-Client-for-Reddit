@@ -87,7 +87,7 @@ const CodeWindowContentPosts = (props) => {
 					<p>
 						<span className="codeReturn">{"return"}</span>
 						<span className="codeOperator">{" ("}</span>
-						<a href={`https://www.reddit.com/${props.permalink}`} className="toRedditButton">
+						<a href={`https://www.reddit.com/${props.permalink}`} rel="noreferrer" target="_blank" className="toRedditButton">
 							<span className="codeFunctionButton">{"open"}</span>
 						</a>
 						<span className="codeOperator">{", "}</span>
