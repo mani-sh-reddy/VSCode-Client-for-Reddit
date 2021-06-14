@@ -14,6 +14,16 @@ const CodeWindow = () => {
 	// eslint-disable-next-line
 	const subredditSortTimeRange = "past 24 hours";
 
+	// let loadingLabel = "Loading...";
+	// const [loaded, setLoaded] = useState(false);
+	// const loadingIndicator = () => {
+	// 	return (
+	// 		<Spinner animation="border" role="status">
+	// 			<span className="visually-hidden">{loadingLabel}</span>
+	// 		</Spinner>
+	// 	);
+	// };
+
 	const getPopularPosts = () => {
 		Axios.get(`https://www.reddit.com/r/${subredditName}/${subredditSort}.json?limit=${postsLimiter}`)
 			.then((response) => {
@@ -22,7 +32,7 @@ const CodeWindow = () => {
 				// allPosts.forEach((object) => {
 				// 	console.log(object.data.title);
 				// });
-				console.log(response.data.data.children);
+				// console.log(response.data.data.children);
 			})
 			.catch((error) => {
 				setError(error.message);
@@ -58,6 +68,8 @@ const CodeWindow = () => {
 								title={posts.data.title}
 								num_comments={posts.data.num_comments}
 								score={posts.data.score}
+								permalink={posts.data.permalink}
+								domain={posts.data.domain}
 							/>
 						);
 					})}

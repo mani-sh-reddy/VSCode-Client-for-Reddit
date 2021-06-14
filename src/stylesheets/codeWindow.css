@@ -94,10 +94,22 @@
 }
 
 .codeComment {
-	color: #757575;
+	color: #919191;
 	line-height: 150%;
 }
 
 .codeReturn {
 	color: #c586c0;
+}
+
+.codeFunctionButton {
+	color: #dcdcaa;
+	text-decoration: underline;
+	text-decoration-thickness: 1.5px;
+}
+
+.toRedditButton:hover {
+	background-color: #4e4e4e;
+	color: #afaf87;
+	border-radius: 3px;
 }
