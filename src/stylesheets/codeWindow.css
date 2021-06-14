@@ -22,7 +22,9 @@
 	text-rendering: optimizeLegibility;
 	font-weight: 400;
 	line-height: 50%;
-	padding: 20px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
 }
 
 .lineNumbersBar {
@@ -34,7 +36,6 @@
 	line-height: 10%;
 	font-family: monospace;
 	font-size: 14px;
-
 	position: fixed;
 	left: 320px;
 	background-color: #222222;
@@ -56,22 +57,6 @@
 	flex-direction: row;
 	align-items: center;
 	z-index: 2;
-}
-
-.breadCrumbBar {
-	height: 20px;
-	width: 100%;
-	position: fixed;
-	top: 45px;
-	left: 320px;
-	background-color: rgb(47, 47, 121);
-	/* background-color: #252526; */
-	transition: 0.5s ease;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	z-index: 2;
-	padding: 3px 0px;
 }
 
 .codeKeyword {
