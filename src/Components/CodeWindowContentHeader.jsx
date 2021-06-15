@@ -8,14 +8,11 @@ const CodeWindowContentHeader = (props) => {
 	return (
 		<>
 			<div>
-				<p>
 					<span className="codeKeyword">class </span>
 					<span className="codeClass">{`${titleCase(props.subredditName)}`}</span>
 					<span className="codeOperator">{" {"}</span>
-				</p>
 
 				<div className="tab1 indentGuide">
-					<p>
 						<span className="codeKeywordLite">{"constructor"}</span>
 						<span className="codeOperator">{"("}</span>
 						<span className="codeInputs">{"sort"}</span>
@@ -23,32 +20,27 @@ const CodeWindowContentHeader = (props) => {
 						<span className="codeInputs">{"time_range"}</span>
 						<span className="codeOperator">{")"}</span>
 						<span className="codeOperator">{" {"}</span>
-					</p>
 
 					<div className="tab1 indentGuide">
-						<p>
 							<span className="codeKeywordLite">{"this"}</span>
 							<span className="codeOperator">{"."}</span>
 							<span className="codeMethodCall">{"sort"}</span>
 							<span className="codeOperator">{" = "}</span>
 							<span className="codeString">{`"${props.subredditSort}"`}</span>
 							<span className="codeOperator">{";"}</span>
-						</p>
-						<p>
+							<br/>
 							<span className="codeKeywordLite">{"this"}</span>
 							<span className="codeOperator">{"."}</span>
 							<span className="codeMethodCall">{"timeRange"}</span>
 							<span className="codeOperator">{" = "}</span>
 							<span className="codeString">{`"${props.subredditSortTimeRange}"`}</span>
 							<span className="codeOperator">{";"}</span>
-						</p>
 					</div>
-					<p>
 						<span className="codeOperator">{"}"}</span>
-					</p>
 					<br />
 				</div>
 			</div>
+			<br />
 		</>
 	);
 };

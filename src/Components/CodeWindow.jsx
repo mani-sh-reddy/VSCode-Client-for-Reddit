@@ -48,6 +48,7 @@ const CodeWindow = () => {
 						subredditSortTimeRange={subredditSortTimeRange}
 					/>
 
+
 					{error === "" ? null : <p>{error}</p>}
 
 					{posts.map((posts) => {
@@ -70,7 +71,7 @@ const CodeWindow = () => {
 
 					{loaded === false ? <LoadingIndicator /> : null}
 
-					<p className="codeOperator">{"}"}</p>
+					<font className="codeOperator">{"}"}</font>
 				</div>
 			</div>
 		</>
