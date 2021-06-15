@@ -5,8 +5,27 @@
 	top: 0;
 	left: 50px;
 	background-color: #252526;
+	color: #bbbbbb;
 	transition: 0.5s ease;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: left;
+	
+	-webkit-font-smoothing: auto;
+	-moz-osx-font-smoothing: auto;
+	text-rendering: optimizeLegibility;
+	font-weight: 300;
+}
+
+.explorerBarHeading {
+	font-size: 12px;
+	padding-left: 20px;
+	
+}
+
+.explorerTopLevel {
+	font-size: 12px;
+	padding-left: 20px;
+	font-weight: 700;
+	
 }
