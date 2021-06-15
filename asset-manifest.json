@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/VSCode-Client-for-Reddit/static/css/main.b84f2dfa.chunk.css",
-    "main.js": "/VSCode-Client-for-Reddit/static/js/main.b82ff71d.chunk.js",
-    "main.js.map": "/VSCode-Client-for-Reddit/static/js/main.b82ff71d.chunk.js.map",
+    "main.js": "/VSCode-Client-for-Reddit/static/js/main.f5955a83.chunk.js",
+    "main.js.map": "/VSCode-Client-for-Reddit/static/js/main.f5955a83.chunk.js.map",
     "runtime-main.js": "/VSCode-Client-for-Reddit/static/js/runtime-main.61200290.js",
     "runtime-main.js.map": "/VSCode-Client-for-Reddit/static/js/runtime-main.61200290.js.map",
     "static/js/2.f936c065.chunk.js": "/VSCode-Client-for-Reddit/static/js/2.f936c065.chunk.js",
@@ -361,6 +361,6 @@
     "static/js/runtime-main.61200290.js",
     "static/js/2.f936c065.chunk.js",
     "static/css/main.b84f2dfa.chunk.css",
-    "static/js/main.b82ff71d.chunk.js"
+    "static/js/main.f5955a83.chunk.js"
   ]
 }
