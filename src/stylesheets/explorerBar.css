@@ -15,17 +15,41 @@
 	-moz-osx-font-smoothing: auto;
 	text-rendering: optimizeLegibility;
 	font-weight: 300;
+	font-size: 12px;
 }
 
 .explorerBarHeading {
-	font-size: 12px;
 	padding-left: 20px;
-	
 }
 
-.explorerTopLevel {
-	font-size: 12px;
+.explorerLevelWorkspace {
 	padding-left: 20px;
 	font-weight: 700;
-	
 }
+
+.explorerIndentLarge {
+	padding-left: 40px;
+}
+
+.explorerIndent {
+	padding-left: 15px;
+}
+
+.explorerLevel2 {
+	margin-top: 3px;
+	margin-bottom: 3px;
+	padding-top: 3px;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.indentGuide {
+	border-left: 1px solid;
+	border-color: #353535;
+}
+
+/* div, p, span {
+	border-width: 1px;
+	border-color: azure;
+	border-style: dotted;
+} */
