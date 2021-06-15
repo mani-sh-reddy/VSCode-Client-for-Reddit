@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/VSCode-Client-for-Reddit/static/css/main.cb15a053.chunk.css",
-    "main.js": "/VSCode-Client-for-Reddit/static/js/main.3fbf5e18.chunk.js",
-    "main.js.map": "/VSCode-Client-for-Reddit/static/js/main.3fbf5e18.chunk.js.map",
+    "main.css": "/VSCode-Client-for-Reddit/static/css/main.6316b951.chunk.css",
+    "main.js": "/VSCode-Client-for-Reddit/static/js/main.fbfde6d3.chunk.js",
+    "main.js.map": "/VSCode-Client-for-Reddit/static/js/main.fbfde6d3.chunk.js.map",
     "runtime-main.js": "/VSCode-Client-for-Reddit/static/js/runtime-main.f49ac169.js",
     "runtime-main.js.map": "/VSCode-Client-for-Reddit/static/js/runtime-main.f49ac169.js.map",
     "static/js/2.939cff86.chunk.js": "/VSCode-Client-for-Reddit/static/js/2.939cff86.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.5f87b8ff.chunk.js": "/VSCode-Client-for-Reddit/static/js/3.5f87b8ff.chunk.js",
     "static/js/3.5f87b8ff.chunk.js.map": "/VSCode-Client-for-Reddit/static/js/3.5f87b8ff.chunk.js.map",
     "index.html": "/VSCode-Client-for-Reddit/index.html",
-    "static/css/main.cb15a053.chunk.css.map": "/VSCode-Client-for-Reddit/static/css/main.cb15a053.chunk.css.map",
+    "static/css/main.6316b951.chunk.css.map": "/VSCode-Client-for-Reddit/static/css/main.6316b951.chunk.css.map",
     "static/js/2.939cff86.chunk.js.LICENSE.txt": "/VSCode-Client-for-Reddit/static/js/2.939cff86.chunk.js.LICENSE.txt",
     "static/media/Account.svg": "/VSCode-Client-for-Reddit/static/media/Account.853ac8ca.svg",
     "static/media/Debug.svg": "/VSCode-Client-for-Reddit/static/media/Debug.a10b25ea.svg",
@@ -360,7 +360,7 @@
   "entrypoints": [
     "static/js/runtime-main.f49ac169.js",
     "static/js/2.939cff86.chunk.js",
-    "static/css/main.cb15a053.chunk.css",
-    "static/js/main.3fbf5e18.chunk.js"
+    "static/css/main.6316b951.chunk.css",
+    "static/js/main.fbfde6d3.chunk.js"
   ]
 }
