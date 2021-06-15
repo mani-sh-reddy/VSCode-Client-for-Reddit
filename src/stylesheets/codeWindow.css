@@ -5,7 +5,7 @@
 	top: 65px;
 	left: 320px;
 	background-color: #222222;
-	color: white;
+	color: #d4d4d4;
 	transition: 0.5s ease;
 	display: flex;
 	flex-direction: column;
@@ -21,7 +21,6 @@
 	-moz-osx-font-smoothing: auto;
 	text-rendering: optimizeLegibility;
 	font-weight: 400;
-	line-height: 150%;
 	padding: 20px 40px;
 }
 
@@ -31,7 +30,7 @@
 	top: 65px;
 	width: 20px;
 	padding: 20px 0;
-	line-height: 10%;
+	line-height: 100%;
 	font-family: monospace;
 	font-size: 14px;
 	position: fixed;
