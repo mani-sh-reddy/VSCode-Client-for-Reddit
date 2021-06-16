@@ -1,12 +1,10 @@
-import "../stylesheets/codeWindow.css";
+import "../stylesheets/tabBar.css";
 
 const TabBar = () => {
     
     return (
     <div className="tabBar">
-    <p>Tab1</p>
-    <p>Tab2</p>
-    <p>Tab3</p>
+    <p className="tabActive">App.js</p>
     </div>
  );
  };
