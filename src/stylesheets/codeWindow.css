@@ -1,6 +1,6 @@
 .codeWindow {
 	height: calc(100% - 65px);
-	width: calc((100% - (50px + 270px))/2);
+	width: calc(100% - (50px + 270px));
 	position: absolute;
 	top: 55px;
 	left: 320px;

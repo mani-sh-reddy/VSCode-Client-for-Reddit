@@ -18,7 +18,6 @@ const CodeWindow = () => {
 	const subredditSortTimeRange = "past 24 hours";
 
 	const getPopularPosts = () => {
-		// TO GET POST INFORMATION ----> https://www.reddit.com/r/popular/comments/cdio0t/get_comments_with_json_in_subreddit_url.json
 		Axios.get(`https://www.reddit.com/r/${subredditName}/${subredditSort}.json?limit=${postsLimiter}`)
 			.then((response) => {
 				const allPosts = response.data.data.children;
